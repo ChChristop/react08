@@ -6,23 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>details와 summary 태그</title>
   <script>
-            function isAndroid(){
-                var bExist = (/android/i.test(navigator.userAgent.toLowerCase()));	 
-                if (bExist) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-            function appLaunch(app_url){
-                if(isAndroid()){
-                    location.href = app_url;
-                }
-            }
-        </script>
+   function appLaunch(app_url){
+    location.href = app_url;
+   }
+</script>
 </head>
 <body>
-  <h3>details와 summary 태그</h3>
   Q &amp; A 리스트
   <hr>
   <details>
@@ -33,7 +22,6 @@
     <summary>Answer 1</summary>
     <p>HTML5, CSS, Javascript</p>
   </details>
-  
   <span onclick="appLaunch('intent://password?name=abc@gmail.com&authCode=abcdefgadvfsf#Intent;scheme=foodpush;package=com.foodpushapp;end;')">
             <h1>Android App 설치 및 실행 - click</h1>
             <img src= "https://img.lovepik.com/element/45004/6829.png_860.png">
