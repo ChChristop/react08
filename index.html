@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>details와 summary 태그</title>
   <script>
-   function appLaunch(app_url){
-    window.location.href = app_url;
+   function appLaunch(){
+    window.location.href='intent://password?name=abc@gmail.com&authCode=abcdefgadvfsf#Intent;scheme=foodpush;package=com.foodpushapp;end;';
    }
 </script>
 </head>
@@ -22,7 +22,7 @@
     <summary>Answer 1</summary>
     <p>HTML5, CSS, Javascript</p>
   </details>
-  <span onclick="appLaunch('intent://password?name=abc@gmail.com&authCode=abcdefgadvfsf#Intent;scheme=foodpush;package=com.foodpushapp;end;')">
+  <span onclick="appLaunch()">
             <h1>Android App 설치 및 실행 - click</h1>
             <img src="https://img.lovepik.com/element/45004/6829.png_860.png" height="180" width="180">
         </span>
