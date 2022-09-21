@@ -8,11 +8,11 @@
   <script>
    function appLaunch(){
      let regExp = /.*?\//g;
-     let matches = regExp.exec(window.location.href);
+     let matches = window.location.href.replace(regExp,'');
 
      console.log (matches)
      
-    window.location.href='intent://seek?id=abc@gmail.com&authcode=abcdefgadvfsf#Intent;scheme=foodpush;package=com.foodpushapp;end;';
+    window.location.href='intent://'+ matches+'#Intent;scheme=foodpush;package=com.foodpushapp;end;';
    }
 </script>
 </head>
